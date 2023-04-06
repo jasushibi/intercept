@@ -6,7 +6,7 @@ function intercept() {
         // request interceptor here
         const response = await originalFetch(resource, config);
         // response interceptor here
-        console.log(response.json());
+        console.log(await response.json());
         return response;
     };
 }
